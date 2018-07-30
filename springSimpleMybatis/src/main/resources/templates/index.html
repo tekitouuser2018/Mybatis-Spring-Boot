@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>INDEX PAGE</title>
+</head>
+<body>
+
+	<div th:each ="book : ${initdata}" th:object="${book}">
+		<p  th:text = "*{title}"></p>
+	</div>
+</body>
+</html>
